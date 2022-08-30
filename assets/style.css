@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type=submit], button, .button {
+    @apply bg-theme-blueDark text-white border-none rounded-full px-4 py-2 cursor-pointer;
+}
+
+.text-h0 {
+    @apply text-4xl md:text-5xl text-center font-display mt-4 md:mt-0;
+}
+
+.text-h1 {
+    @apply font-display text-xl md:text-3xl mb-6;
+}
+
+.text-h2 {
+    @apply font-display text-lg md:text-3xl;
+}
