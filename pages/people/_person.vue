@@ -17,10 +17,17 @@
 </template>
 
 <script>
-    export default {
-        async asyncData({ $content, params }) {
-            const person = await $content('people', params.person, 'index').fetch()
-            return { person }
-        },
-    }
+import headFactory from '@/utils/head-factory'
+export default {
+    async asyncData({ $content, params }) {
+        const person = await $content('people', params.person, 'index').fetch()
+        return { person }
+    },
+    head() {
+        return headFactory({
+            title: this.person.title,
+            path: this.$route.path
+        })
+    },
+}
 </script>

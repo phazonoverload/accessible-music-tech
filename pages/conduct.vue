@@ -9,11 +9,18 @@
 </template>
 
 <script>
+import headFactory from '@/utils/head-factory'
 export default {
     async asyncData({ $content }) {
         const content = await $content('static/conduct').fetch()
         console.log(content)
         return { content }
-    }
+    },
+    head() {
+        return headFactory({
+            title: 'Code of Conduct',
+            path: this.$route.path
+        })
+    },
 }
 </script>
