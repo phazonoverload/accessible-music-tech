@@ -1,6 +1,6 @@
 ---
 title: Dame Evelyn Glennie
-pronouns: she/her
+pronouns: She/Her
 role: 'Percussionist'
 avatar:
     path: placeholder.png

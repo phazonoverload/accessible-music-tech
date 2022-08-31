@@ -1,6 +1,6 @@
 ---
 title: Mike Verdone
-pronouns: he/him
+pronouns: He/Him
 role: 'Product Owner, Ableton'
 avatar:
     path: placeholder.png

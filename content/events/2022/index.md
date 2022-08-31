@@ -12,12 +12,16 @@ speakers:
     - jo-thomas
     - mike-verdone
     - tim-yates
+    - jason-dasent
+    - dj-arthro
+    - si-tew
+    - owain-wilson
 schedule:
     - title: Welcome to Accessible Music Tech 2022
       start: 2022-09-23T09:00:00
       end: 2022-09-23T09:30:00
       people: ['amy-dickens']
-    - title: Accessible Music Live Streaming
+    - title: Accessible Live Music Streaming
       start: 2022-09-23T09:30:00
       end: 2022-09-23T10:20:00
       people: ['andre-louis']
@@ -25,19 +29,19 @@ schedule:
       start: 2022-09-23T10:20:00
       end: 2022-09-23T10:30:00
       ops: true
-    - title: Industry Panel
+    - title: Meet the Makers - Panel Q&A
       start: 2022-09-23T10:30:00
       end: 2022-09-23T11:30:00
-      people: ['amy-dickens', 'mike-verdone', 'andre-louis', 'tim-yates']
+      people: ['mike-verdone']
     - title: Lunch
       start: 2022-09-23T11:30:00
       end: 2022-09-23T12:30:00
       ops: true
-    - title: Accessible Music Technology in Research
+    - title: In the Studio with Jason Dasent
       start: 2022-09-23T12:30:00
       end: 2022-09-23T13:30:00
-      people: ['amy-dickens']
-    - title: In Conversation With Dame Evelyn Glennie
+      people: ['jason-dasent']
+    - title: A Conversation With Dame Evelyn Glennie
       start: 2022-09-23T13:30:00
       end: 2022-09-23T14:20:00
       people: ['evelyn-glennie']
@@ -45,11 +49,11 @@ schedule:
       start: 2022-09-23T14:20:00
       end: 2022-09-23T14:30:00
       ops: true
-    - title: Mobility Session
+    - title: Turning Movements into Music with Control One
       start: 2022-09-23T14:30:00
       end: 2022-09-23T15:30:00
-      people: ['amy-dickens']
-    - title: Neurodiversity and Music Tech
+      people: ['si-tew', 'owain-wilson']
+    - title: Atypical Music Tech
       start: 2022-09-23T15:30:00
       end: 2022-09-23T16:20:00
       people: ['jo-thomas']
@@ -57,13 +61,17 @@ schedule:
       start: 2022-09-23T16:20:00
       end: 2022-09-23T16:30:00
       ops: true
-    - title: Building Accessible Music Technology
+    - title: Building Accessible Music Tech
       start: 2022-09-23T16:30:00
       end: 2022-09-23T17:30:00
       people: ['tim-yates']
-    - title: Closing Remarks
+    - title: Finding the Right Setup
       start: 2022-09-23T17:30:00
-      end: 2022-09-23T18:00:00
+      end: 2022-09-23T18:30:00
+      people: ['dj-arthro']
+    - title: Closing Remarks
+      start: 2022-09-23T18:30:00
+      end: 2022-09-23T19:00:00
       people: ['amy-dickens']
 sponsors:
     - ableton

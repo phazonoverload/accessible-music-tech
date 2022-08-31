@@ -1,6 +1,6 @@
 ---
 title: Amy Dickens
-pronouns: they/them
+pronouns: They/Them
 role: 'Accessibility Specialist'
 avatar:
     path: amy-dickens.jpg

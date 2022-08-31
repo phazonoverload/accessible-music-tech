@@ -1,7 +1,7 @@
 ---
-title: Jo Thomas
-pronouns: She/Her
-role: 'Composer'
+title: DJ Arthro
+pronouns: He/Him
+role: 'Producer'
 avatar:
     path: placeholder.png
     alt: alt text here

@@ -11,7 +11,7 @@
 
         <section id="cal" class="mb-12 text-center">
             <p>This event is free and there is no need to register. Just come back here at the start of the event ({{ $moment(event.start).format('HH:mm') }} in {{ $moment.tz.guess(true).split('/')[1].split('_').join(' ')}} time).</p>
-            <p class="mt-4"><a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Accessible+Music+Tech+2022&dates=20220923/20220924&details=Visit+https://accessiblemusic.tech+to+watch+the+conference." class="underline">Add this event to your Google Calendar</a> or <a class="underline" href="amt2022.ics">download a .ics file</a>.</p>
+            <p class="mt-4"><a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Accessible+Music+Tech+2022&dates=20220923/20220924&details=Visit+https://accessiblemusic.tech+to+watch+the+conference." class="underline">Add this event to your Google Calendar</a> or <a class="underline" href="amt2022.ics">download the ICS file</a>.</p>
         </section>
 
         <Newsletter class="mb-12" />
@@ -70,7 +70,6 @@ export default {
         });
 
         const allSponsors = await $content('sponsors', { deep: true }).fetch()
-        console.log(allSponsors)
         const sponsors = event.sponsors.map(sponsor => allSponsors.find(s => s.dir.split("/sponsors/")[1] == sponsor))
 
         return { event, speakers, schedule, sponsors };

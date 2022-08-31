@@ -1,6 +1,6 @@
 ---
 title: Tim Yates
-pronouns: he/him
+pronouns: He/Him
 role: 'Instrument Builder'
 avatar:
     path: placeholder.png

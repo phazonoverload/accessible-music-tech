@@ -1,6 +1,6 @@
 ---
 title: Andre Louis
-pronouns: he/him
+pronouns: He/Him
 role: 'Musician'
 avatar:
     path: placeholder.png
