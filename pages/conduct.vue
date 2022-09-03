@@ -13,7 +13,6 @@ import headFactory from '@/utils/head-factory'
 export default {
     async asyncData({ $content }) {
         const content = await $content('static/conduct').fetch()
-        console.log(content)
         return { content }
     },
     head() {

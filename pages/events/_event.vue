@@ -72,13 +72,9 @@ export default {
             });
 
             const allSponsors = await $content('sponsors', { deep: true }).fetch()
-            console.log(allSponsors)
             data.sponsors = event.sponsors.map(sponsor => allSponsors.find(s => s.dir.split("/sponsors/")[1] == sponsor))
 
         }
-
-        console.log(data)
-
         return data;
     },
     head() {
