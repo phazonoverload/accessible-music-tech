@@ -7,7 +7,7 @@
     </div>
 
     <div v-if="events.length > 0">
-      <h2 class="text-h2 mt-4">Upcoming Events</h2>
+      <h2 class="text-h2 mt-4">Events</h2>
       <EventList :events="events" titles="h2" />
     </div>
     <Blobs />
