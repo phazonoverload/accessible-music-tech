@@ -41,6 +41,13 @@ export default {
   ],
   content: {},
   build: {},
+  generate: {
+    async routes() {
+      const { $content } = require('@nuxt/content') // eslint-disable-line
+      const items = await $content('events', { deep: true }).fetch()
+      return items.map(i => i.dir)
+    }
+  },
   tailwindcss: {
     cssPath: '~/assets/style.css'
   },

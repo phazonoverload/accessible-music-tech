@@ -1,4 +1,5 @@
 ---
+hidden: true
 start: 2022-09-23T09:00:00
 title: Accessible Music Tech 2022
 location: Online
