@@ -9,9 +9,9 @@
 
 <style scoped>
 .blobs * { position: fixed; z-index: -1; }
-.blobs .tl { left: 0; @apply top-20 sm:top-14 w-12 md:w-32; }
+.blobs .tl { left: 0; @apply top-14 w-12 md:w-32; }
 .blobs .bl { bottom: 0; left: 0; @apply w-12 md:w-32; }
-.blobs .tr { right: 0; @apply top-20 sm:top-14 w-12 md:w-32; }
+.blobs .tr { right: 0; @apply top-14 w-12 md:w-32; }
 .blobs .br { bottom: 0; right: 0; @apply w-12 md:w-32; }
 
 </style>
