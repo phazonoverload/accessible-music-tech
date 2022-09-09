@@ -1,13 +1,13 @@
 ---
 title: Si Tew
 pronouns: He/Him
-role: 'Producer'
+role: 'Founder, Digit Music'
 avatar:
-    path: placeholder.png
-    alt: alt text here
+    path: SiTew.jpg
+    alt: Si Tew
 links:
-    - url: 'https://twitter.com/RedRoxProjects'
-      text: twitter.com/RedRoxProjects
+    - url: 'https://digitmusic.co.uk'
+      text: digitmusic.co.uk
 ---
 
-Bio
+Si is one of the founders of Digit Music, his background is in music production and live performance, designing sounds and composing music for use on TV. Working with clients including Universal Music, Netflix, BBC and MTV, his music can be heard on TV networks worldwide.
