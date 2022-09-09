@@ -1,5 +1,4 @@
 ---
-hidden: true
 start: 2022-09-23T09:00:00
 ics: amt2022.ics
 google_cal_template: 'https://www.google.com/calendar/render?action=TEMPLATE&text=Accessible+Music+Tech+2022&dates=20220923/20220924&details=Visit+https://accessiblemusic.tech+to+watch+the+conference.'
