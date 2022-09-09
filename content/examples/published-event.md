@@ -1,5 +1,4 @@
 ---
-hidden: true
 start: 2022-09-23T09:00:00
 ics: amt2022.ics
 google_cal_template: 'https://www.google.com/calendar/render?action=TEMPLATE&text=Accessible+Music+Tech+2022&dates=20220923/20220924&details=Visit+https://accessiblemusic.tech+to+watch+the+conference.'
@@ -12,24 +11,15 @@ speakers:
     - amy-dickens
     - andre-louis
     - evelyn-glennie
-    - emma-frid
+    - jo-thomas
     - mike-verdone
     - tim-yates
-    - jason-dasent
-    - dj-arthro
-    - si-tew
-    - owain-wilson
-    - pierre-pfister
-    - stephen-penny
-    - olena-mizrakh
-    - adil-ghanty
-
 schedule:
     - title: Welcome to Accessible Music Tech 2022
       start: 2022-09-23T09:00:00
       end: 2022-09-23T09:30:00
       people: ['amy-dickens']
-    - title: Accessible Live Music Streaming
+    - title: Accessible Music Live Streaming
       start: 2022-09-23T09:30:00
       end: 2022-09-23T10:20:00
       people: ['andre-louis']
@@ -37,19 +27,19 @@ schedule:
       start: 2022-09-23T10:20:00
       end: 2022-09-23T10:30:00
       ops: true
-    - title: Meet the Makers - Industry Panel Q&A
+    - title: Industry Panel
       start: 2022-09-23T10:30:00
       end: 2022-09-23T11:30:00
-      people: ['mike-verdone', 'pierre-pfister', 'adil-ghanty', 'olena-mizrakh', 'stephen-penny']
+      people: ['amy-dickens', 'mike-verdone', 'andre-louis', 'tim-yates']
     - title: Lunch
       start: 2022-09-23T11:30:00
       end: 2022-09-23T12:30:00
       ops: true
-    - title: Building Bespoke Accessible Music Tech
+    - title: Accessible Music Technology in Research
       start: 2022-09-23T12:30:00
       end: 2022-09-23T13:30:00
-      people: ['tim-yates']
-    - title: A Conversation With Dame Evelyn Glennie
+      people: ['amy-dickens']
+    - title: In Conversation With Dame Evelyn Glennie
       start: 2022-09-23T13:30:00
       end: 2022-09-23T14:20:00
       people: ['evelyn-glennie']
@@ -57,29 +47,25 @@ schedule:
       start: 2022-09-23T14:20:00
       end: 2022-09-23T14:30:00
       ops: true
-    - title: Turning Movements into Music with Control One
+    - title: Mobility Session
       start: 2022-09-23T14:30:00
       end: 2022-09-23T15:30:00
-      people: ['si-tew', 'owain-wilson']
-    - title: Accessible Music Technology in Research
+      people: ['amy-dickens']
+    - title: Neurodiversity and Music Tech
       start: 2022-09-23T15:30:00
       end: 2022-09-23T16:20:00
-      people: ['emma-frid']
+      people: ['jo-thomas']
     - title: Break
       start: 2022-09-23T16:20:00
       end: 2022-09-23T16:30:00
       ops: true
-    - title: In the Studio with Jason Dasent
+    - title: Building Accessible Music Technology
       start: 2022-09-23T16:30:00
       end: 2022-09-23T17:30:00
-      people: ['jason-dasent']
-    - title: Finding the Right Setup
-      start: 2022-09-23T17:30:00
-      end: 2022-09-23T18:30:00
-      people: ['dj-arthro']
+      people: ['tim-yates']
     - title: Closing Remarks
-      start: 2022-09-23T18:30:00
-      end: 2022-09-23T19:00:00
+      start: 2022-09-23T17:30:00
+      end: 2022-09-23T18:00:00
       people: ['amy-dickens']
 sponsors:
     - ableton

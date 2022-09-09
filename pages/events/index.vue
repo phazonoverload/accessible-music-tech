@@ -10,7 +10,7 @@
 import headFactory from '@/utils/head-factory'
 export default {
     async asyncData({ $content }) {
-        const events = await $content('events', { deep: true }).sortBy('start', 'asc').fetch()
+        const events = await $content('events', { deep: true }).where({ hidden: { $ne: true } }).sortBy('start', 'asc').fetch()
         return { events }
     },
     head() {

@@ -6,8 +6,10 @@
       <Newsletter class="my-8 w-full" />
     </div>
 
-    <h2 class="text-h2 mt-4">Upcoming Events</h2>
-    <EventList :events="events" titles="h2" />
+    <div v-if="events.length > 0">
+      <h2 class="text-h2 mt-4">Events</h2>
+      <EventList :events="events" titles="h2" />
+    </div>
     <Blobs />
   </div>
 </template>
@@ -16,7 +18,7 @@
 import headFactory from '@/utils/head-factory'
 export default {
   async asyncData({ $content }) {
-    const events = await $content('events', { deep: true }).sortBy('start', 'asc').fetch()
+    const events = await $content('events', { deep: true }).where({ hidden: { $ne: true } }).sortBy('start', 'asc').fetch()
     return { events }
   },
   head() {

@@ -9,19 +9,19 @@
         <p class="text-center text-lg mt-6 mb-12">{{ event.descriptions.full }}</p>
 
 
-        <section id="cal" class="mb-12 text-center">
+        <section id="cal" class="mb-12 text-center" v-if="!event.save_the_date">
             <p>This event is free and there is no need to register. Just come back here at the start of the event ({{ $moment(event.start).format('HH:mm') }} in {{ $moment.tz.guess(true).split('/')[1].split('_').join(' ')}} time).</p>
             <p class="mt-4"><a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Accessible+Music+Tech+2022&dates=20220923/20220924&details=Visit+https://accessiblemusic.tech+to+watch+the+conference." class="underline">Add this event to your Google Calendar</a> or <a class="underline" href="amt2022.ics">download the ICS file</a>.</p>
         </section>
 
         <Newsletter class="mb-12" />
 
-        <section id="people" class="pb-16">
+        <section id="people" class="pb-16" v-if="!event.save_the_date">
             <h2 class="text-h2 mb-4">Speakers</h2>
             <PeopleList :people="speakers" />
         </section>
 
-        <section id="schedule" class="mb-12">
+        <section id="schedule" class="mb-12" v-if="!event.save_the_date">
             <h2 class="text-h2 mb-4">Schedule</h2>
             <p>Times are localized to {{ $moment.tz.guess(true).split('/')[1].split('_').join(' ') }}</p>
             <table class="w-full mt-6">
@@ -46,7 +46,7 @@
             </table>
         </section>
 
-        <section id="sponsors" class="pb-12">
+        <section id="sponsors" class="pb-12" v-if="!event.save_the_date">
             <h2 class="text-h2 mb-4">Sponsors</h2>
             <SponsorList :sponsors="sponsors" />
         </section>
@@ -59,20 +59,23 @@
 import headFactory from '@/utils/head-factory'
 export default {
     async asyncData({ $content, params, redirect }) {
-        const event = await $content("events", params.event, "index").fetch();
+        const event = await $content("events", params.event, "index").fetch()
+        const data = { event }
 
-        const allPeople = await $content("people", { deep: true }).fetch();
-        const speakers = allPeople.filter(person => event.speakers.find(speaker => person.dir.split("/people/")[1] == speaker));
+        if(!event.save_the_date) {
+            const allPeople = await $content("people", { deep: true }).fetch();
+            data.speakers = allPeople.filter(person => event.speakers.find(speaker => person.dir.split("/people/")[1] == speaker))
 
-        const schedule = event.schedule.map(session => {
-            const people = session.people ? session.people.map(sp => speakers.find(s => s.dir.split("/people/")[1] == sp)) : false;
-            return { ...session, people };
-        });
+            data.schedule = event.schedule.map(session => {
+                const people = session.people ? session.people.map(sp => data.speakers.find(s => s.dir.split("/people/")[1] == sp)) : false;
+                return { ...session, people };
+            });
 
-        const allSponsors = await $content('sponsors', { deep: true }).fetch()
-        const sponsors = event.sponsors.map(sponsor => allSponsors.find(s => s.dir.split("/sponsors/")[1] == sponsor))
+            const allSponsors = await $content('sponsors', { deep: true }).fetch()
+            data.sponsors = event.sponsors.map(sponsor => allSponsors.find(s => s.dir.split("/sponsors/")[1] == sponsor))
 
-        return { event, speakers, schedule, sponsors };
+        }
+        return data;
     },
     head() {
         return headFactory({
