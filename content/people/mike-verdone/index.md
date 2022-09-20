@@ -3,7 +3,7 @@ title: Mike Verdone
 pronouns: He/Him
 role: 'Product Owner, Ableton'
 avatar:
-    path: placeholder.png
+    path: MikeVerdone.JPG
     alt: 
 links:
     - url: 'https://www.linkedin.com/in/mikeverdone/'
