@@ -22,6 +22,7 @@ speakers:
     - stephen-penny
     - olena-mizrakh
     - adil-ghanty
+    - harry-morley
 
 schedule:
     - title: Welcome to Accessible Music Tech 2022
@@ -39,7 +40,7 @@ schedule:
     - title: Meet the Makers - Industry Panel Q&A
       start: 2022-09-23T10:30:00
       end: 2022-09-23T11:30:00
-      people: ['mike-verdone', 'pierre-pfister', 'adil-ghanty', 'olena-mizrakh', 'stephen-penny']
+      people: ['mike-verdone', 'pierre-pfister', 'adil-ghanty', 'olena-mizrakh', 'stephen-penny', 'harry-morley']
     - title: Lunch
       start: 2022-09-23T11:30:00
       end: 2022-09-23T12:30:00

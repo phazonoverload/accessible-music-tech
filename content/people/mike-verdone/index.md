@@ -4,7 +4,7 @@ pronouns: He/Him
 role: 'Product Owner, Ableton'
 avatar:
     path: MikeVerdone.JPG
-    alt: 
+    alt: Mike Verdone
 links:
     - url: 'https://www.linkedin.com/in/mikeverdone/'
       text: Connect with Mike on LinkedIn
